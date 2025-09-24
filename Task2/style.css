@@ -1,0 +1,92 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input area */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+#add-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #28a745;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-btn:hover {
+  background: #218838;
+}
+
+/* Task list */
+#task-list {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Remove button */
+.remove-btn {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #b52a37;
+}
